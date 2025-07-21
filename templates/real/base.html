@@ -1,0 +1,95 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+     
+<head>
+ 
+    <meta charset="utf-8">
+   
+   {% block title %} <title>Jayprogroup - Real Estate Development Company</title>{% endblock title %}
+
+    <meta name="author" content="creativelayers">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="{% static "real/css/animate.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "real/css/animation.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "real/css/nouislider.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "real/css/nice-select.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "real/css/bootstrap.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "real/css/bootstrap-select.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "real/css/swiper-bundle.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "real/css/magnific-popup.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "real/css/mmenu.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "real/css/style.css" %}">
+
+    <!-- Font -->
+    <link rel="stylesheet" href="{% static "real/font/fonts.css" %}">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="{% static "real/icon/flaticon_just-home.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "real/icon/icomoon/style.css" %}">
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="{% static "real/images/logo/jay.PNG" %}">
+    <link rel="apple-touch-icon-precomposed" href="{% static "real/images/logo/jay.PNG" %}">
+
+</head>
+
+<body>
+    <!-- preload -->
+    <div class="preload preload-container">
+        <div class="middle"></div>
+    </div>
+    <!-- /preload -->
+
+    <!-- #wrapper -->
+    <div id="wrapper">
+        <!-- #page -->
+        <div id="page" class="">
+
+            {% include 'real/partial/header.html' %}
+
+  {% block content %}
+  
+  {% endblock %}
+  <!-- Footer -->
+  {% include 'real/partial/footer.html' %}
+
+      <!-- Javascript -->
+    <script src="{% static 'real/js/jquery.min.js' %}"></script>
+    <script src="{% static 'real/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'real/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'real/js/bootstrap-select.min.js' %}"></script>
+    <script src="{% static 'real/js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'real/js/swiper.js' %}"></script>
+    <script src="{% static 'real/js/countto.js' %}"></script>
+    <script src="{% static 'real/js/circletype.min.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFC3m2n0jBRFTMvUNZc0-6Y0Rzlcadzcw"></script>
+    <script src="{% static 'real/js/maps.js' %}"></script>
+    <script src="{% static 'real/js/marker.js' %}"></script>
+    <script src="{% static 'real/js/infobox.min.js' %}"></script>
+    <script src="{% static 'real/js/magnific-popup.min.js' %}"></script>
+    <script src="{% static 'real/js/apexcharts.js' %}"></script>
+    <script src="{% static 'real/js/area-chart.js' %}"></script>
+    <script src="{% static 'real/js/morris.min.js' %}"></script>
+    <script src="{% static 'real/js/raphael.min.js' %}"></script>
+    <script src="{% static 'real/js/morris.js' %}"></script>
+    <script src="{% static 'real/js/nouislider.min.js' %}"></script>
+    <script src="{% static 'real/js/rangle-slider.js' %}"></script>
+    <script src="{% static 'real/js/mmenu.js' %}"></script>
+    <script src="{% static 'real/js/wow.min.js' %}"></script>
+    <script src="{% static 'real/js/scrollmagic.js' %}"></script>
+    <script src="{% static 'real/js/main.js' %}"></script>
+
+    <script>
+        new Mmenu(document.querySelector("#menu"));
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+
+
+{% extends "real/base.html" %}
+{% load static %}
+
+
+
+
+{% block content %}
+
+
+
+            <!-- main-content -->
+            <div class="main-content px-20 default">
+
+                <div class="space-20"></div>
+
+                <!-- flat-title -->
+                <section class="flat-title inner-page">
+                    <div class="cl-container full">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="content">
+                                    <h2>Frequently asked questions</h2>
+                                    <ul class="breadcrumbs">
+                                        <li><a href="{% url "realindex" %}">Home</a></li><li>/</li><li>Frequently asked questions</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /flat-title -->
+
+                <!-- flat-question -->
+                <section class="tf-section flat-question style-1">
+                    <div class="cl-container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="heading-section text-center">
+                                    <h2 class="wow fadeInUp">Have you got question?</h2>
+                                    <div class="text wow fadeInUp">Thinking About Buying or Selling? These 5 FAQs Will Help You Decide.</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="widget-tabs style-1">
+                                    <ul class="widget-menu-tab wow fadeInUp">
+                                        <li class="item-title">
+                                            <span class="inner">Home Buying</span>
+                                        </li>
+                                        <li class="item-title active">
+                                            <span class="inner">Home Selling</span>
+                                        </li>
+                                       
+                                    </ul>
+                                    <div class="widget-content-tab">
+                                        <div class="widget-content-inner">
+                                            <div class="flat-accordion">
+                                                <div class="flat-toggle active">
+                                                    <h4 class="toggle-title active">Do I Really Need a Real Estate Agent?</h4>
+                                                    <div class="toggle-content">
+                                                        <p>While it’s possible to buy or sell a home without an agent, most people benefit from professional guidance. Agents provide market expertise, negotiation skills, and help navigate legal and financial paperwork. Their experience can save you time, money, and a lot of stress..</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flat-toggle">
+                                                    <h4 class="toggle-title">What’s the Difference Between Pre-Qualified and Pre-Approved?</h4>
+                                                    <div class="toggle-content">
+                                                        <p>Pre-qualification is an estimate of how much you might be able to borrow, based on self-reported financial information. Pre-approval is more formal—it involves submitting documents to a lender who verifies your income, credit, and debts. A pre-approval carries more weight with sellers and strengthens your offer in competitive markets.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flat-toggle">
+                                                    <h4 class="toggle-title"> How Much Should I Budget for Closing Costs?</h4>
+                                                    <div class="toggle-content">
+                                                        <p>Closing costs typically range from 2% to 5% of the home’s purchase price. These include lender fees, title insurance, appraisal fees, escrow charges, and more. It's important to factor these into your overall budget so you're not caught off guard at the closing table.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flat-toggle">
+                                                    <h4 class="toggle-title">Is Now a Good Time to Sell My Home?</h4>
+                                                    <div class="toggle-content">
+                                                        <p>Timing the market perfectly is difficult, but you can still make a smart decision by evaluating current local trends. Look at inventory levels, buyer demand, and recent comparable sales in your neighborhood. A qualified real estate agent can help you analyze your specific situation and maximize your sale price. </p>
+                                                    </div>
+                                                </div>
+                                                <div class="flat-toggle">
+                                                    <h4 class="toggle-title">How Do I Know If I’m Ready to Buy a Home?</h4>
+                                                    <div class="toggle-content">
+                                                        <p>Buying a home is a big financial and emotional commitment. You may be ready if you have a stable income, a good credit score, manageable debt, and enough saved for a down payment (typically 3–20%). Beyond finances, consider whether you're ready to settle in one place for several years. If the answer is yes, it might be time to start house hunting.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flat-toggle">
+                                                    <h4 class="toggle-title">How Long Does It Take to Buy or Sell a Home?</h4>
+                                                    <div class="toggle-content">
+                                                        <p>The timeline can vary, but on average, buying a home takes 30 to 60 days once you're under contract. The search process may take longer depending on your criteria and market conditions. Selling a home also typically takes 30 to 90 days, though well-priced homes in hot markets may go under contract in a matter of days.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flat-toggle">
+                                                    <h4 class="toggle-title"> What Should I Look for During a Home Tour?</h4>
+                                                    <div class="toggle-content">
+                                                        <p>While it's easy to focus on style and layout, you should also look for potential maintenance issues—such as signs of water damage, cracks in walls, outdated electrical, or roof wear. Don’t be afraid to check inside cabinets, test light switches, or ask about HVAC systems and insulation. You can love a home’s look, but you want to be sure it’s structurally sound too.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flat-toggle">
+                                                    <h4 class="toggle-title"> Can I Buy or Sell a Home Without a Real Estate Agent?</h4>
+                                                    <div class="toggle-content">
+                                                        <p>Yes, but it’s not always recommended. Selling your home "For Sale By Owner" (FSBO) might save commission fees, but you could leave money on the table without proper pricing, staging, or marketing. Buying without an agent can also be risky if you're not familiar with contracts, negotiations, and local regulations. A good agent protects your interests and helps avoid costly mistakes..</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flat-toggle">
+                                                    <h4 class="toggle-title">What Happens During a Home Inspection—and Do I Need One?</h4>
+                                                    <div class="toggle-content">
+                                                        <p>A home inspection is a crucial part of the buying process. After your offer is accepted, a licensed inspector will examine the property’s condition—from the roof and foundation to plumbing, electrical systems, HVAC, and more. The inspection report helps identify issues you may not see during a showing. While not legally required, skipping it can be risky. It’s your opportunity to renegotiate, request repairs, or even walk away if major problems are discovered.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-content-inner active">
+                                            <div class="flat-accordion">
+                                                <div class="flat-toggle active">
+                                                    <h4 class="toggle-title active">Do I Really Need a Real Estate Agent?</h4>
+                                                    <div class="toggle-content">
+                                                        <p>While it’s possible to buy or sell a home without an agent, most people benefit from professional guidance. Agents provide market expertise, negotiation skills, and help navigate legal and financial paperwork. Their experience can save you time, money, and a lot of stress..</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flat-toggle">
+                                                    <h4 class="toggle-title">What’s the Difference Between Pre-Qualified and Pre-Approved?</h4>
+                                                    <div class="toggle-content">
+                                                        <p>Pre-qualification is an estimate of how much you might be able to borrow, based on self-reported financial information. Pre-approval is more formal—it involves submitting documents to a lender who verifies your income, credit, and debts. A pre-approval carries more weight with sellers and strengthens your offer in competitive markets.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flat-toggle">
+                                                    <h4 class="toggle-title"> How Much Should I Budget for Closing Costs?</h4>
+                                                    <div class="toggle-content">
+                                                        <p>Closing costs typically range from 2% to 5% of the home’s purchase price. These include lender fees, title insurance, appraisal fees, escrow charges, and more. It's important to factor these into your overall budget so you're not caught off guard at the closing table.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flat-toggle">
+                                                    <h4 class="toggle-title">Is Now a Good Time to Sell My Home?</h4>
+                                                    <div class="toggle-content">
+                                                        <p>Timing the market perfectly is difficult, but you can still make a smart decision by evaluating current local trends. Look at inventory levels, buyer demand, and recent comparable sales in your neighborhood. A qualified real estate agent can help you analyze your specific situation and maximize your sale price. </p>
+                                                    </div>
+                                                </div>
+                                                <div class="flat-toggle">
+                                                    <h4 class="toggle-title">How Do I Know If I’m Ready to Buy a Home?</h4>
+                                                    <div class="toggle-content">
+                                                        <p>Buying a home is a big financial and emotional commitment. You may be ready if you have a stable income, a good credit score, manageable debt, and enough saved for a down payment (typically 3–20%). Beyond finances, consider whether you're ready to settle in one place for several years. If the answer is yes, it might be time to start house hunting.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flat-toggle">
+                                                    <h4 class="toggle-title">How Long Does It Take to Buy or Sell a Home?</h4>
+                                                    <div class="toggle-content">
+                                                        <p>The timeline can vary, but on average, buying a home takes 30 to 60 days once you're under contract. The search process may take longer depending on your criteria and market conditions. Selling a home also typically takes 30 to 90 days, though well-priced homes in hot markets may go under contract in a matter of days.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flat-toggle">
+                                                    <h4 class="toggle-title"> What Should I Look for During a Home Tour?</h4>
+                                                    <div class="toggle-content">
+                                                        <p>While it's easy to focus on style and layout, you should also look for potential maintenance issues—such as signs of water damage, cracks in walls, outdated electrical, or roof wear. Don’t be afraid to check inside cabinets, test light switches, or ask about HVAC systems and insulation. You can love a home’s look, but you want to be sure it’s structurally sound too.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flat-toggle">
+                                                    <h4 class="toggle-title"> Can I Buy or Sell a Home Without a Real Estate Agent?</h4>
+                                                    <div class="toggle-content">
+                                                        <p>Yes, but it’s not always recommended. Selling your home "For Sale By Owner" (FSBO) might save commission fees, but you could leave money on the table without proper pricing, staging, or marketing. Buying without an agent can also be risky if you're not familiar with contracts, negotiations, and local regulations. A good agent protects your interests and helps avoid costly mistakes..</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flat-toggle">
+                                                    <h4 class="toggle-title">What Happens During a Home Inspection—and Do I Need One?</h4>
+                                                    <div class="toggle-content">
+                                                        <p>A home inspection is a crucial part of the buying process. After your offer is accepted, a licensed inspector will examine the property’s condition—from the roof and foundation to plumbing, electrical systems, HVAC, and more. The inspection report helps identify issues you may not see during a showing. While not legally required, skipping it can be risky. It’s your opportunity to renegotiate, request repairs, or even walk away if major problems are discovered.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /flat-question -->
+
+            </div>
+            <!-- /main-content -->
+{% endblock %}

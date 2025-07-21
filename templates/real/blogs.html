@@ -1,0 +1,118 @@
+
+{% extends "real/base.html" %}
+{% load static %}
+
+{% block content %}
+            <!-- main-content -->
+            <div class="main-content">
+
+                <!-- flat-title -->
+                <div class="flat-title">
+                    <div class="cl-container full">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="content">
+                                    <h2>Blog Pages</h2>
+                                    <ul class="breadcrumbs">
+                                        <li><a href="{% url "realindex" %}">Home</a></li><li>/</li><li>Property List</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /flat-title -->
+    
+                <!-- widget-tabs -->
+                <div class="widget-tabs style-1">
+                    <ul class="widget-menu-tab wow fadeInUp">
+                        <li class="item-title active">
+                            <span class="inner">Buying</span>
+                        </li>
+                       
+                    </ul>
+
+                        <div class="widget-content-inner active">
+                            <!-- grid-blog -->
+                            <div class="cl-container">
+                                <div class="row">
+                                    {% for post in posts %}
+                                    <div class="col-xl-3 col-md-6 col-12">
+                                        <div class="wg-blog wow fadeInUp">
+                                            <div class="image">
+                                                <img src="{{ post.featured_image.url }}" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <div class="sub-blog">
+                                                    <div>Estate Insight ⭐</div>
+                                                    <div>{{ post.created_at }}</div>
+                                                </div>
+                                                <div class="name">
+                                                    <a href="{% url 'blog1index' post.slug %}">{{ post.title }}</a>
+                                                </div>
+                                                <a href="{% url 'blog1index' post.slug %}" class="tf-button-no-bg">
+                                                    Read More 
+                                                    <i class="icon-arrow-right-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                    <div class="col-12">
+                                    {% if posts.paginator.num_pages > 1 %}
+                                    <ul class="wg-pagination justify-center wow fadeInUp">
+
+                                        {# Previous Page Link #}
+                                        {% if posts.has_previous %}
+                                            <li>
+                                                <a href="?page={{ posts.previous_page_number }}"><i class="icon-keyboard_arrow_left"></i></a>
+                                            </li>
+                                        {% else %}
+                                            <li class="disabled">
+                                                <a href="#"><i class="icon-keyboard_arrow_left"></i></a>
+                                            </li>
+                                        {% endif %}
+
+                                        {# Page Numbers #}
+                                        {% for num in posts.paginator.page_range %}
+                                            {% if num == posts.number %}
+                                                <li class="active"><a href="#">{{ num }}</a></li>
+                                            {% elif num >= posts.number|add:-2 and num <= posts.number|add:2 %}
+                                                <li><a href="?page={{ num }}">{{ num }}</a></li>
+                                            {% elif num == 1 or num == posts.paginator.num_pages %}
+                                                <li><a href="?page={{ num }}">{{ num }}</a></li>
+                                            {% elif forloop.first or forloop.last %}
+                                                <li><a href="#">...</a></li>
+                                            {% endif %}
+                                        {% endfor %}
+
+                                        {# Next Page Link #}
+                                        {% if posts.has_next %}
+                                            <li>
+                                                <a href="?page={{ posts.next_page_number }}"><i class="icon-keyboard_arrow_right"></i></a>
+                                            </li>
+                                        {% else %}
+                                            <li class="disabled">
+                                                <a href="#"><i class="icon-keyboard_arrow_right"></i></a>
+                                            </li>
+                                        {% endif %}
+
+                                    </ul>
+                                    {% endif %}
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- /grid-blog -->
+                        </div>
+                        
+                            <!-- /grid-blog -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /widget-tabs -->
+    
+
+            </div>
+            <!-- /main-content -->
+{% endblock %}

@@ -1,0 +1,51 @@
+
+{% extends "real/base.html" %}
+{% load static %}
+
+{% block content %}
+            <!-- main-content -->
+            <div class="main-content spacing-20">
+                <!-- blog-single-wrap -->
+                <div class="blog-single-wrap">
+    
+                    <!-- image-head -->
+                    <div id="imageHead" class="image-head" style="width: 390.4px; height: 257px;">
+                        <img id="featuredImage" src="{{ post.featured_image.url }}" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius: 84px;">
+                    </div>
+                    <!-- /image-head -->
+    
+                    <!-- blog-single-inner -->
+                    <div class="cl-container">
+                        <div class="row justify-center">
+                            <div class="col-xl-8 col-12">
+                                <div class="blog-single-inner">   {{ post.content|safe }} </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /blog-single-inner -->
+
+                
+                </div>
+                <!-- /blog-single-wrap -->
+            </div>
+            <script>
+    function adjustImageSize() {
+        const imageHead = document.getElementById('imageHead');
+        if (window.innerWidth >= 768) {
+            // Desktop
+            imageHead.style.width = '100%';
+            imageHead.style.height = '380px';
+        } else {
+            // Mobile
+            imageHead.style.width = '100%';
+            imageHead.style.height = '257px';
+        }
+    }
+
+    // Run on load
+    adjustImageSize();
+
+    // Optional: Adjust on resize
+    window.addEventListener('resize', adjustImageSize);
+</script>
+ {% endblock %}

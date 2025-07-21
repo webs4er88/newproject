@@ -1,0 +1,178 @@
+
+{% extends "real/base.html" %}
+{% load static %}
+
+
+
+{% block content %}
+
+
+<body class="body dashboard">
+
+    <!-- preload -->
+    <div class="preload preload-container">
+        <div class="middle"></div>
+    </div>
+    <!-- /preload -->
+
+    <!-- #wrapper -->
+    <div id="wrapper">
+        <!-- #page -->
+        <div id="page" class="layout-wrap background-F9F9F9">
+            
+
+
+            <!-- main-content -->
+            <div class="main-content spacing-20">
+
+                <div class="layout-wrap-inner">
+
+                    <!-- section-menu-left -->
+                    <div class="section-menu-left">
+                        <div class="menu-content">
+                            <ul>
+                                <li class="active">
+                                    <a href="#"><i class="flaticon-hotel"></i>Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="flaticon-user"></i>My Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="flaticon-comment"></i>Reviews</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="flaticon-chat-bubble"></i>Message</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="flaticon-plus"></i>Add New Properties</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="flaticon-home-2"></i>My Properties</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="flaticon-home-3"></i>My Favorites</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="flaticon-find"></i>Saved Search</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="flaticon-layers-1"></i>My Package</a>
+                                </li>
+                                <li>
+                                    <a href="{% url "realindex" %}"><i class="flaticon-logout"></i>Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /section-menu-left -->
+                    
+                    <!-- section-content-right -->
+                    <div class="section-content-right">
+                        <h3>Hello Ali Tufan</h3>
+                        <div class="text-content">We are glad to see you again!</div>
+
+                        <div class="grid-section-4 mb-20">
+                            <div class="wg-box">
+                                <div class="box-icon style-1 type-row">
+                                    <div class="content">
+                                        <a href="#" class="title">16</a> 
+                                        <div class="text-content">Published</div>
+                                    </div>
+                                    <div class="icon has-ellipse">
+                                        <i class="flaticon-outbox"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wg-box">
+                                <div class="box-icon style-1 type-row">
+                                    <div class="content">
+                                        <a href="#" class="title">24</a> 
+                                        <div class="text-content">Pending</div>
+                                    </div>
+                                    <div class="icon has-ellipse">
+                                        <i class="flaticon-file"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wg-box">
+                                <div class="box-icon style-1 type-row">
+                                    <div class="content">
+                                        <a href="#" class="title">39</a> 
+                                        <div class="text-content">Favorites</div>
+                                    </div>
+                                    <div class="icon has-ellipse">
+                                        <i class="flaticon-home-3"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wg-box">
+                                <div class="box-icon style-1 type-row">
+                                    <div class="content">
+                                        <a href="#" class="title">48</a> 
+                                        <div class="text-content">Reviews</div>
+                                    </div>
+                                    <div class="icon has-ellipse">
+                                        <i class="flaticon-comment"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-section-1">
+                            <div class="wg-box pl-44">
+                                <h4>View Statistics</h4>
+                                <div class="area-chart">
+                                    <div id="line-chart-5"></div>
+                                </div>
+                            </div>
+                            <div class="wg-box">
+                                <h4>Recent Activities</h4>
+                                <ul class="wrap-recent-activities">
+                                    <li class="recent-activities-item">
+                                        <div class="image"></div>
+                                        <p>Your listing <span>Modern House in Greenville</span> has been approved!.</p>
+                                    </li>
+                                    <li class="recent-activities-item">
+                                        <div class="image"></div>
+                                        <p>Kathy Brown left a review on <span>Renovated Apartment</span></p>
+                                    </li>
+                                    <li class="recent-activities-item">
+                                        <div class="image"></div>
+                                        <p>Someone favorites your <span>Gorgeous Villa Bay</span> View listing!</p>
+                                    </li>
+                                    <li class="recent-activities-item">
+                                        <div class="image"></div>
+                                        <p>Your listing <span>Luxury Family Home</span> has been approved!</p>
+                                    </li>
+                                    <li class="recent-activities-item">
+                                        <div class="image"></div>
+                                        <p>Kathy Brown left a review on <span>Renovated Apartment</span></p>
+                                    </li>
+                                    <li class="recent-activities-item">
+                                        <div class="image"></div>
+                                        <p>Kathy Brown left a review on <span>Renovated Apartment</span></p>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="tf-button-primary w-full style-bg-white">View More<i class="icon-arrow-right-add"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="bottom-page">
+                            <p>Copyright © 2024. JustHome</p>
+                        </div>
+                    </div>
+                    <!-- /section-content-right -->
+
+                    <!-- btn-canvas -->
+                    <div class="btn-canvas active">
+                        <span></span>
+                        <div class="text-content"> Dashboard Navigation</div>
+                    </div>
+                    <!-- /btn-canvas -->
+
+                </div>
+              
+            </div>
+            <!-- /main-content -->
+{% endblock %}

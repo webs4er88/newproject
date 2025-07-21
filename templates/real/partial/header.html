@@ -1,0 +1,60 @@
+{% load static %}
+<!-- header -->
+            <header id="header_main" class="header header-fixed">
+                <div class="header-inner"> 
+                    <div class="header-inner-wrap">
+                        <div id="site-logo">
+                            <a href="{% url "realindex" %}" rel="home">
+                                <img class="d-block" id="logo-header" src="{% static 'real/images/logo/jay.PNG' %}"  style="width: 70px; height: 70px;">
+                            </a>
+                        </div>
+                        <nav class="main-menu">
+                            <ul class="navigation">
+                                <li class="has-children"><a href="{% url "realindex" %}">Home</a></li>
+                                <li class="has-children"><a href="{% url "propertiesindex" %}">Listings</a></li>
+                                <li class="has-children"><a href="{% url "aboutindex" %}">About</a></li>
+                                <li class="has-children"><a href="{% url "blogsindex" %}">Blog</a></li>
+                                <li class="has-children"><a href="{% url "contactindex" %}">Contact</a></li>
+                                <li class="has-children"><a href="{% url "faqindex" %}">FAQ</a>
+                                 
+                        </nav>
+                        <div class="header-right">
+                            
+                        </div>
+                        <a class="mobile-nav-toggler mobile-button" href="#menu"></a>
+                    </div>
+                </div>
+                <nav id="menu">
+                    <a class="close" aria-label="Close menu" href="#mm-2">
+                        <i class="icon-close"></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <span><a href="{% url "aboutindex" %}">About Us</a></span>
+                            
+                        </li>
+                        <li class="current">
+                            <span><a href="{% url "blogsindex" %}">Blog</a></span>
+                            
+                        </li>
+                        <li>
+                            <span><a href="{% url "contactindex" %}">Contact</a></span>
+                            
+                        </li>
+                        <li>
+                            <span><a href="{% url "dashboardindex" %}">Dashboard</a></span>
+                            
+                        </li>
+                        <li>
+                            <span><a href="{% url "propertiesindex" %}">Listings</a></span>
+                            
+                        </li>
+                         <li>
+                            <span><a href="{% url "faqindex" %}">FAQs</a></span>
+                            
+                        </li>
+                          
+                        
+                    </ul>
+                </nav>
+            </header>
